@@ -1,8 +1,8 @@
 import "./App.css";
-import Portofolio from "./features/portofolio/Portofolio.jsx";
+import PortofolioPage from "./features/portofolio/PortofolioPage";
 
 function App() {
-  return <Portofolio />;
+  return <PortofolioPage />;
 }
 
 export default App;

@@ -1,4 +1,12 @@
-function Card({ image, title, description }) {
+function Card({
+  image,
+  title,
+  description,
+}: {
+  image: string;
+  title: string;
+  description: string;
+}) {
   return (
     <div className="snap-start flex flex-col w-full gap-4">
       <div className="rounded-lg overflow-hidden w-full h-60 sm:h-80 md:h-[450px]">

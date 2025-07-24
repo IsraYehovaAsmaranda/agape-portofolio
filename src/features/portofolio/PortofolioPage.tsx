@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import LatestProjects from "./components/latest-projects/LatestProjects";
 import Testimonials from "./components/testimonials/Testimonials";
 
-const Portfolio = () => {
+function PortofolioPage() {
   return (
     <div className="bg-[#100E18] text-white font-sans overflow-x-hidden overflow-y-hidden">
       <Navbar />
@@ -16,6 +16,6 @@ const Portfolio = () => {
       <Contacts />
     </div>
   );
-};
+}
 
-export default Portfolio;
+export default PortofolioPage;

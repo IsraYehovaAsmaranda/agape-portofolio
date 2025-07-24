@@ -4,7 +4,7 @@ import TestimonialCard from "./components/TestimonialCard";
 import { useRef } from "react";
 
 function Testimonials() {
-  const scrollRef = useRef();
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
     scrollRef.current?.scrollBy({ left: -300, behavior: "smooth" });
@@ -15,7 +15,10 @@ function Testimonials() {
   };
 
   return (
-    <div id="testimonials" className="flex flex-col px-4 py-16 sm:px-6 md:px-10 lg:px-20 gap-12 sm:gap-14 md:gap-16">
+    <div
+      id="testimonials"
+      className="flex flex-col px-4 py-16 sm:px-6 md:px-10 lg:px-20 gap-12 sm:gap-14 md:gap-16"
+    >
       <div className="flex flex-row flex-wrap justify-between">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
           What They Say
@@ -46,7 +49,6 @@ function Testimonials() {
                 description={testimonial.description}
                 date={testimonial.date}
                 rating={testimonial.rating}
-                isEven={(index + 1) % 2 === 0}
               />
             );
           })}
